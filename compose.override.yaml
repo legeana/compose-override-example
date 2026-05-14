@@ -1,0 +1,7 @@
+services:
+  nginx:
+    # This will result in no ports being exported.
+    # See <https://docs.docker.com/reference/compose-file/merge/#reset-value>.
+    ports: !reset []
+    # This makes nginx run instead of failing.
+    command: !reset []

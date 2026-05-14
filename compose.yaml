@@ -1,0 +1,13 @@
+services:
+  nginx:
+    image: nginx:1
+    # compose_plugin displays forwarded ports in the UI.
+    # If ports is not overridden it is immediately obvious.
+    ports:
+      - 10080:80
+    # This makes the entire container fail with: "nginx: invalid option THIS".
+    command:
+      - nginx
+      - THIS
+      - WILL
+      - FAIL
