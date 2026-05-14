@@ -5,3 +5,5 @@ services:
     ports: !reset []
     # This makes nginx run instead of failing.
     command: !reset []
+    labels:
+      net.unraid.docker.icon: 'https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/nginx.png'
