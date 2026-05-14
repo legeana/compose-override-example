@@ -8,7 +8,6 @@ services:
       - 10080:80
     # This makes the entire container fail with: "nginx: invalid option THIS".
     command:
-      - nginx
-      - THIS
-      - WILL
-      - FAIL
+      - sh
+      - -c
+      - "echo NO OVERRIDE; sleep 100000"
